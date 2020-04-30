@@ -6,5 +6,4 @@
 ### 2.各种dom操作
 ### 3.svg canvas
 ### 4.video audio 视频和音频
-### Web Speech API。 SpeechSynthesisUtterance(读)
-webkitSpeechRecognition(识别)
+### Web Speech API。 SpeechSynthesisUtterance(读) webkitSpeechRecognition(识别)
