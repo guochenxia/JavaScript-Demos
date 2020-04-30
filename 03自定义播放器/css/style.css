@@ -1,0 +1,100 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body{
+  height: 100vh;
+  background-color: #e657bb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #ffffff;
+}
+h1{
+  margin-bottom: 20px;
+}
+.container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #000;
+}
+
+.video{
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+  height: 80%;
+  object-fit: fill;
+}
+
+.controls{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 10px 5px 10px;
+  box-sizing: border-box;
+  /* visibility: hidden; */
+}
+.btn{
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+.btn .fa-play,
+.btn .fa-pause{
+  color: #ffffff;
+  margin-right: 10px;
+}
+
+.btn .fa-volume-up,
+.btn .fa-expand,
+.btn .fa-compress,
+.btn .fa-volume-off{
+  color: #ffffff;
+}
+
+.btn#fullScreen{
+  float: right;
+  margin-top: 5px;
+}
+
+.time{
+  display: inline-block;
+  margin-left: 15px;
+  font-size: 12px;
+}
+
+.container:hover .controls{
+  visibility: visible;
+}
+
+.fa-play-circle-o{
+  font-size: 50px;
+  position: absolute;
+  bottom: 50px;
+  left: 10px;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+@media(max-width: 900px) {
+  .container{
+    width: 90%;
+  }
+}
+
+.adjust{
+  width: 60px;
+  display: inline-block;
+  height: 16px;
+}
+.volumeInput{
+  width: 100%;  
+}

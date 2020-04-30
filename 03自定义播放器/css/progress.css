@@ -1,0 +1,41 @@
+:root{
+    --progress-all: #d9d9d9;
+    --progress-looked:#409EFF;
+}
+
+input[type="range"] {
+    -webkit-appearance: none; /*去除默认样式*/
+    background-color: var(--progress-all);
+    background-size: contain;
+    height: 4px;
+    display: block;
+    width: 100%;
+    outline: none;
+    cursor: pointer;
+}
+.line{
+    /* width: calc(100% - 20px); */
+    height: 4px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background-color: var(--progress-looked);
+    box-sizing: border-box;
+}
+
+
+input[type="range"]::-webkit-slider-thumb {
+    cursor: pointer;
+    -webkit-appearance: none;
+    /*去除默认样式*/
+    cursor: default;
+    top: 0;
+    height: 14px;
+    width: 14px;
+    transform: translateY(0px);
+    background: #fff;
+    border-radius: 15px;
+    border: 1px solid #006eb3;
+    z-index: 111;
+}
+

@@ -1,0 +1,151 @@
+:root{
+  --modal-duration: 1s;
+  --primary-color: #30336b;
+  --secondary-color: #be2edd;
+}
+
+body.show-nav{
+  transform: translateX(200px);
+}
+
+.modal-container.show-modal{
+  display: block;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  transition: .5s ease;
+}
+
+nav{
+  background-color: var(--primary-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  transform: translateX(-100%);
+}
+
+.logo{
+  padding: 30px;
+  text-align: center;
+}
+
+nav ul li{
+  padding: 20px 0 20px 10px;
+  border-bottom: 1px solid #dedede;
+}
+nav ul li:first-of-type{
+  border-top: 1px solid #dedede;
+}
+a:link,
+a:visited{
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover,
+a:active{
+  color: rgb(145, 189, 228);
+}
+button,
+input[type = 'submit']{
+  background-color: var(--secondary-color);
+  border: none;
+  color: aliceblue;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+header{
+  background-color: var(--primary-color);
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+  position: relative;
+}
+header p{
+  margin: 20px 0;
+}
+
+header .toggle{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: rgba(0, 0, 0, .1);
+}
+
+.modal-container{
+  background-color: rgba(0,0,0,.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+
+.login{
+  padding: 10px 30px;
+}
+
+.modal{
+  background-color: #fff;
+  box-shadow:0 0 10px rgba(0, 0, 0, .1);
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  width: 400px;
+  animation: modalopen var(--modal-duration);
+}
+
+.title{
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 15px;
+}
+
+.close{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 15px;
+  background-color: transparet;
+}
+
+.modal-content{
+  padding: 20px;
+}
+
+.form div{
+  margin: 15px 0;
+}
+
+.form label{
+  display: block;
+}
+.form input{
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  outline: none;
+}
+
+@keyframes modalopen{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}

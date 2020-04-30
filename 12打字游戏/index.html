@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>打字游戏</title>
+  <link href="https://cdn.bootcss.com/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <button id="setting-btn" class="setting-btn">
+    <i class="fas fa-cog"></i>
+  </button>
+
+  <div class="setting" id="setting">
+    <form id="setting-form">
+      <div>
+        <label for="level">难度设置</label>
+        <select  id="level">
+          <option value="easy">简单</option>
+          <option value="medium">中等</option>
+          <option value="hard">困难</option>
+        </select>
+      </div>
+    </form>
+  </div>
+
+  <div class="container">
+    <h2>阿炜在线打字游戏</h2>
+    <small>本局单词为：</small>
+
+    <h1 id="word"></h1>
+
+    <input type="text" autocomplete="off" id="text">
+
+    <p class="time-container">
+      剩余时间：<span id="time"></span>
+    </p>
+    <p class="score-container">
+      游戏得分：<span id="score"></span>
+    </p>
+
+    <div class="end-game-container" id="end-game-container"></div>
+  </div>
+  
+  <script src="./index.js"></script>
+</body>
+</html>

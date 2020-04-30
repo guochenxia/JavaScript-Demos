@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>表单验证</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>注册</h2>
+    <form class="form" id="form">
+      <div class="form-item">
+        <label for="name">用户名</label>
+        <input type="text" id="name" placeholder="请输入用户名">
+        <small>错误信息</small>
+      </div>
+      <div class="form-item">
+        <label for="email">邮箱</label>
+        <input type="text" id='email' placeholder="请输入邮箱">
+        <small>错误信息</small>
+      </div>
+      <div class="form-item">
+        <label for="pwd">密码</label>
+        <input type="text" id="pwd" placeholder="请输入密码">
+        <small>错误信息</small>
+      </div>
+      <div class="form-item">
+        <label for="rePwd">确认密码</label>
+        <input type="text" id="rePwd" placeholder="请输入确认密码">
+        <small>错误信息</small>
+      </div>
+      <button type="submit">提 交</button>
+    </form>
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+</html>
